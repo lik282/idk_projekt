@@ -5,18 +5,12 @@ answer = random.randint(lowest_num, highest_num)
 #puska
 print(answer)
 print("A random number has been choosen (1-100) try and guess it! ")
-print("Goodluck")
+print("Goodluck!")
 
 guesses = 0
 isrunnung = True
 
 
-"""for answer in guess:
-    if guess == guesses:
-        print("YOU WIN")
-    elif guess != guesses:
-        print("INCORRECT, TRY AGAIN")
-    """
 while isrunnung:
     
     guess = input("Your guess: ")
@@ -29,6 +23,8 @@ while isrunnung:
             print("PLEASE SELECT A NUMBER (1-100) that was out of the range")
         elif guess == answer:
             print("CORRECT, YOU WON")
+            print(f"THE ANSWER IS {answer} WELL DONE")
+            print(f"IT TOOK YOU {guesses + 1} GUESSES")
             break
         elif guess > answer:
             print("TRY LOWER")
